@@ -1,0 +1,238 @@
+{
+  "main": {
+    "id": "5e14083cf3a31772",
+    "type": "split",
+    "children": [
+      {
+        "id": "66b20627835224ea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e5765212c14da85",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "project-docs/expense-tracker/AI Generated/Documentations/BE-Accounts/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "def2fb2801742972",
+    "type": "split",
+    "children": [
+      {
+        "id": "c4c9fd1cb0d41364",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "efe62964200872d2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Penjelajah berkas"
+            }
+          },
+          {
+            "id": "cb34e825b3cafec0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Penelusuran"
+            }
+          },
+          {
+            "id": "9bace175ad8abb27",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Penanda"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "34d0235915bfa550",
+    "type": "split",
+    "children": [
+      {
+        "id": "7db0d05fc3b9d684",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ac136f8cfd2e6ea",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "notes/cheminformatics/molecular-descriptors-and-qsar.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlink"
+            }
+          },
+          {
+            "id": "167c9bec33133a81",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "notes/cheminformatics/molecular-descriptors-and-qsar.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Tautan Keluar"
+            }
+          },
+          {
+            "id": "0b3544e299e3621a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tag"
+            }
+          },
+          {
+            "id": "27145fb53d8e3f00",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Semua properti"
+            }
+          },
+          {
+            "id": "e8a7730df075bbbb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "notes/cheminformatics/molecular-descriptors-and-qsar.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Kerangka"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-kanban:Create new board": false,
+      "switcher:Buka peralih cepat": false,
+      "graph:Buka tampilan grafik": false,
+      "canvas:Buat kanvas baru": false,
+      "daily-notes:Buka catatan hari ini": false,
+      "templates:Masukkan template": false,
+      "command-palette:Buka palet perintah": false,
+      "bases:Buat basis baru": false,
+      "zk-prefixer:Buat catatan unik baru": false
+    }
+  },
+  "active": "7e5765212c14da85",
+  "lastOpenFiles": [
+    "README.md",
+    "project-docs/expense-tracker/AI Generated/Documentations/BE-Accounts/README.md",
+    "project-docs/expense-tracker/AI Generated/Documentations/BE-Accounts",
+    "GEMINI.md",
+    "project-docs/expense-tracker/AI Generated/Documentations/BE-Auth/README.md",
+    "notes/webdev/production-grade-anatomy.md",
+    "notes/webdev/CS Abstraction/cs-abstraction-roadmap.md",
+    "project-docs/expense-tracker/AI Generated/Documentations/BE-Auth",
+    "project-docs/expense-tracker/AI Generated/Documentations",
+    "project-docs/expense-tracker/AI Generated",
+    "notes/webdev/compass/First Principles coding.md",
+    "notes/webdev/Database Migrations.md",
+    "project-docs/expense-tracker/MILESTONE 1 DATA MASTER.md",
+    "notes/webdev/istilah/Tanpa judul.md",
+    "project-docs/expense-tracker/milestone.md",
+    "projects/expense-tracker/apps/server/src/features/accounts/accounts.routes.ts",
+    "projects/expense-tracker/apps/server/src/features/accounts/accounts.controller.ts",
+    "projects/expense-tracker/apps/server/src/features/accounts/accounts.schema.ts",
+    "projects/expense-tracker/apps/server/src/features/accounts",
+    "projects/expense-tracker/apps/server/drizzle.config.ts",
+    "projects/expense-tracker/apps/client/src/router/index.tsx",
+    "Learning Schedules.md",
+    "kanban/Stage 1 - CS Fundamental.md",
+    "kanban/Stage 2 - CS Fundamental.md",
+    "Untitled Kanban.md",
+    "kanban/Tanpa judul.md",
+    "notes/webdev/istilah/backlog-fitur.md",
+    "Excalidraw/Drawing 2026-09-06 13.44.17.excalidraw.md",
+    "Excalidraw/Drawing 2026-09-06 13.43.58.excalidraw.md",
+    "projects/expense-tracker/node_modules/react-router/docs/explanation/type-safety.md",
+    "projects/expense-tracker/node_modules/ms/license.md",
+    "202609061314.md",
+    "2026-09-06.md",
+    "projects/expense-tracker/node_modules/@esbuild-kit/core-utils/node_modules/@esbuild/win32-x64/README.md",
+    "projects/expense-tracker/node_modules/react-router/docs/start/data/testing.md",
+    "projects/expense-tracker/node_modules/react-router/docs/start/data/routing.md",
+    "projects/expense-tracker/apps/client/public/favicon.svg",
+    "projects/expense-tracker/apps/client/public/icons.svg",
+    "projects/expense-tracker/apps/client/dist/icons.svg",
+    "projects/expense-tracker/apps/client/dist/favicon.svg"
+  ]
+}

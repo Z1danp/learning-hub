@@ -1,0 +1,17 @@
+{
+  "name": "agentic-learning-hub",
+  "version": "1.0.0",
+  "description": "Personal First-Principles Learning Hub for Modern WebDev & Cheminformatics",
+  "type": "module",
+  "scripts": {
+    "test:web": "node --test labs/webdev/**/*.test.ts"
+  },
+  "keywords": [
+    "learning",
+    "webdev",
+    "cheminformatics",
+    "socratic"
+  ],
+  "author": "muham",
+  "license": "MIT"
+}

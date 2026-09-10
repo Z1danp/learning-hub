@@ -1,0 +1,10 @@
+[project]
+name = "agentic-learning-hub"
+version = "1.0.0"
+description = "Personal First-Principles Learning Hub for Modern WebDev & Cheminformatics"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["labs"]
+python_files = ["test_*.py", "*_test.py"]
