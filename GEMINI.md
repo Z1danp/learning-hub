@@ -15,10 +15,10 @@ This workspace is a **Personal Learning Studio & Coding Gym** designed for **Fir
    - External projects are linked under `projects/<project-name>/` (e.g. `projects/expense-tracker`).
    - When encountering a problem or abstraction boundary in a real project, isolate it and drill down into its underlying mechanics.
    - **The 2-Layer Rule**: Never drill down more than 2 layers beneath the active problem layer in a single session:
-     - `Layer 0`: Surface code / Framework API (e.g. `express`, `drizzle`, `react`).
-     - `Layer -1`: Runtime & Language CS mechanics (Event Loop, Closures, Crypto hashing, Memory heap).
-     - `Layer -2`: OS, Network Protocols, & Storage (TCP/IP, HTTP headers, DB B-Tree indexes, ACID).
-     - `Layer -3`: Stop and log into `notes/wishlist.md` if curiosity strays to silicon/transistor levels.
+     - `Layer 0`: Surface code / Framework API / Lab SOP (e.g. `express`, `react`, sample digestion, calibration curve, instrument software UI).
+     - `Layer -1`: Runtime CS mechanics / Instrument Mechanics (Event Loop, Memory heap, RF plasma torch, nebulizer aerosol, quadrupole $m/z$, electron multiplier).
+     - `Layer -2`: OS/DB Protocols / Atomic Physics & Physical Chemistry (TCP/IP, B-Tree, Saha ionization equilibrium, space-charge dispersion, isobaric/polyatomic collision cross-section).
+     - `Layer -3`: Stop and log into `notes/wishlist.md` if curiosity strays to subatomic quarks/silicon gates.
 
 3. **Writing is Thinking**:
    - Encourage synthesizing mental models into `notes/<domain>/<topic>.md` formatted for Obsidian with `[[wikilinks]]`.
@@ -53,7 +53,7 @@ The agent responds to the following prefix triggers (with or without `@`):
 
 - `projects/`: Symlinks/junctions to real-world codebases being studied (e.g. `projects/expense-tracker`).
 - `project-docs/`: Architectural documentation, engineering backlogs, and AI-generated feature deep-dives (`project-docs/<project-name>/AI Generated/Documentations/`).
-- `labs/`: TDD coding gym sandboxes (`labs/webdev/`, `labs/cheminformatics/`).
-- `notes/`: Obsidian vault second-brain notes.
-- `references/`: Ground truth papers, PDFs, and documentation.
+- `labs/`: TDD coding gym sandboxes (`labs/webdev/`, `labs/cheminformatics/`, `labs/analytical_chemistry/`).
+- `notes/`: Obsidian vault second-brain notes (`notes/webdev/`, `notes/cheminformatics/`, `notes/analytical_chemistry/`).
+- `references/`: Ground truth papers, PDFs, and documentation (SOPs, EPA/ISO methods).
 - `scripts/runner.py`: CLI helper for test running and scaffolding.

@@ -44,7 +44,7 @@ def run_test(test_path: str):
         sys.exit(1)
 
 def create_note(domain: str, title: str):
-    valid_domains = ["cheminformatics", "webdev", "hybrid_apps"]
+    valid_domains = ["cheminformatics", "webdev", "hybrid_apps", "analytical_chemistry"]
     if domain not in valid_domains:
         print(f"[ERROR] Domain harus salah satu dari: {valid_domains}")
         sys.exit(1)
@@ -58,14 +58,18 @@ def create_note(domain: str, title: str):
         print(f"[WARN] Catatan sudah ada: {note_path}")
         return
 
-    template_path = ROOT_DIR / "templates" / "note_template.md"
+    if domain == "analytical_chemistry":
+        template_path = ROOT_DIR / "templates" / "instrument_note_template.md"
+    else:
+        template_path = ROOT_DIR / "templates" / "note_template.md"
+
     template = template_path.read_text(encoding="utf-8")
     content = template.replace("{{TITLE}}", title).replace("{{DOMAIN}}", domain).replace("{{DATE}}", str(date.today()))
     note_path.write_text(content, encoding="utf-8")
     print(f"[SUCCESS] Catatan baru berhasil dibuat: {note_path}")
 
 def create_lab(domain: str, lab_name: str):
-    valid_domains = ["cheminformatics", "webdev", "fullstack_chem_apps"]
+    valid_domains = ["cheminformatics", "webdev", "fullstack_chem_apps", "analytical_chemistry"]
     if domain not in valid_domains:
         print(f"[ERROR] Domain harus salah satu dari: {valid_domains}")
         sys.exit(1)
@@ -74,17 +78,25 @@ def create_lab(domain: str, lab_name: str):
     lab_dir = ROOT_DIR / "labs" / domain / slug
     lab_dir.mkdir(parents=True, exist_ok=True)
 
-    if domain == "cheminformatics":
+    if domain in ("cheminformatics", "analytical_chemistry"):
         lab_file = lab_dir / "lab.py"
         test_file = lab_dir / "test_lab.py"
-        tmpl = (ROOT_DIR / "templates" / "chem_lab_template.py").read_text(encoding="utf-8")
+        
+        if domain == "analytical_chemistry":
+            tmpl = (ROOT_DIR / "templates" / "analytical_lab_template.py").read_text(encoding="utf-8")
+            entry_func = "calculate_metric"
+        else:
+            tmpl = (ROOT_DIR / "templates" / "chem_lab_template.py").read_text(encoding="utf-8")
+            entry_func = "solve_challenge"
+
         lab_file.write_text(tmpl.replace("{{TOPIC}}", lab_name).replace("{{PROBLEM_DESCRIPTION}}", "Jelaskan masalah lab di sini."), encoding="utf-8")
-        test_file.write_text("""import unittest
-from lab import solve_challenge
+        test_file.write_text(f"""import unittest
+from lab import {entry_func}
 
 class TestLab(unittest.TestCase):
     def test_example(self):
-        self.assertTrue(True)
+        # Starter sanity test
+        self.assertTrue(callable({entry_func}))
 
 if __name__ == '__main__':
     unittest.main()

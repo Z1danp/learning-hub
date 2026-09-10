@@ -1,9 +1,16 @@
 [project]
 name = "agentic-learning-hub"
 version = "1.0.0"
-description = "Personal First-Principles Learning Hub for Modern WebDev & Cheminformatics"
+description = "Personal First-Principles Learning Hub for WebDev, Analytical Chemistry & Cheminformatics"
 readme = "README.md"
 requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "scipy>=1.10.0",
+    "matplotlib>=3.7.0",
+    "pytest>=8.0.0",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["labs"]

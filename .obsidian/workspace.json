@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project-docs/expense-tracker/AI Generated/Documentations/BE-Accounts/README.md",
+                "file": "GEMINI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "GEMINI"
             }
           }
         ]
@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "34d0235915bfa550",
@@ -195,9 +194,10 @@
   "active": "7e5765212c14da85",
   "lastOpenFiles": [
     "README.md",
+    "GEMINI.md",
+    "Learning Schedules.md",
     "project-docs/expense-tracker/AI Generated/Documentations/BE-Accounts/README.md",
     "project-docs/expense-tracker/AI Generated/Documentations/BE-Accounts",
-    "GEMINI.md",
     "project-docs/expense-tracker/AI Generated/Documentations/BE-Auth/README.md",
     "notes/webdev/production-grade-anatomy.md",
     "notes/webdev/CS Abstraction/cs-abstraction-roadmap.md",
@@ -215,7 +215,6 @@
     "projects/expense-tracker/apps/server/src/features/accounts",
     "projects/expense-tracker/apps/server/drizzle.config.ts",
     "projects/expense-tracker/apps/client/src/router/index.tsx",
-    "Learning Schedules.md",
     "kanban/Stage 1 - CS Fundamental.md",
     "kanban/Stage 2 - CS Fundamental.md",
     "Untitled Kanban.md",
