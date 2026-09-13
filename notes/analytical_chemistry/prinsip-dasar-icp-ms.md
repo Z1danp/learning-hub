@@ -9,7 +9,7 @@ tags:
 date: 2026-09-10
 status: in-progress # in-progress | reviewed | mastered
 related:
-  - "[[analytical-chemistry-roadmap]]"
+  - "[[icp-ms-learning-roadmap]]"
 ---
 
 # Prinsip Dasar ICP MS
