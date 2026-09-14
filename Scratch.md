@@ -1,0 +1,11 @@
+DC = 100 V
+- Negatif = -100
+	- RF + = 600
+		- Total = 500
+	- RF - = -600
+		- Total = -700
+- Positif = 100
+	- RF + = 600
+		- Total = 700
+	- RF - = -600
+		- Total = 100

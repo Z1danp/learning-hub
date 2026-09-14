@@ -15,7 +15,7 @@ related:
 # Prinsip Dasar ICP MS
 
 > **One-Sentence Core Phenomenon:**  
-> *(Tuliskan prinsip fisika/kimia utama instrumen ini dalam 1 kalimat padat)*
+> ICP-MS mengonversi analit cair menjadi ion positif monoatomik via plasma Argon bersuhu ekstrem (~6.000–10.000 K), mendiskriminasi interferensi poliatomik secara fisik melalui sel kolisi/reaksi, dan memilah massa berdasarkan rasio $m/z$ dalam osilasi medan dinamis RF dan statis DC Quadrupole.
 
 ---
 
@@ -32,12 +32,14 @@ related:
 ## 2. Interferensi & Strategi Mitigasi
 
 ### A. Interferensi Spektral (Isobarik, Poliatomik, Doubly Charged)
-- **Spesies Pengganggu**: *(contoh: $^{40}\text{Ar}^{16}\text{O}^+$ pada $^{56}\text{Fe}^+$, atau $^{40}\text{Ar}^{35}\text{Cl}^+$ pada $^{75}\text{As}^+$)*
-- **Mekanisme Eliminasi**: *(KED mode dengan gas He / Reaction Cell dengan gas reaksi $H_2, O_2, NH_3$)*
+- **Spesies Pengganggu**: $^{40}\text{Ar}^{16}\text{O}^+$ pada $^{56}\text{Fe}^+$, $^{40}\text{Ar}^{35}\text{Cl}^+$ pada $^{75}\text{As}^+$, $^{136}\text{Ba}^{2+}$ pada $^{68}\text{Zn}^+$. Detail mendalam: [[icp-ms-interferensi-dan-qcell-ked]].
+- **Mekanisme Eliminasi**:
+  - He-KED Mode dengan barier potensial energi kinetik (memanfaatkan ukuran penampang lintang $\sigma_{coll}$ poliatomik yang lebih bongsor).
+  - Reaction Cell Mode dengan *mass-shift* kimia fase gas ($O_2, H_2, NH_3$).
 
 ### B. Interferensi Non-Spektral (Efek Matriks & Fisik)
-- **Gejala**: *(Penurunan sinyal internal standard, pendinginan plasma oleh pelarut organik)*
-- **Mitigasi**: *(Pengenceran, matrix matching, metode penambahan standar / MSA)*
+- **Gejala**: Penurunan sinyal internal standard, pendinginan plasma oleh asam berlebih atau pelarut organik, penyumbatan cone oleh garam terlarut (TDS $> 0.2\%$).
+- **Mitigasi**: Pengenceran (*dilution*), *matrix matching*, metode penambahan standar (*standard addition* / MSA).
 
 ---
 
@@ -65,7 +67,7 @@ related:
 ---
 
 ## 5. Sparring Notes & Catatan Mentor
-*(Bagian ini untuk mencatat hasil diskusi `@mentor` atau `@falsify`)*
-- [ ] Konsep fundamental yang sudah divalidasi
-- [ ] Pertanyaan terbuka / misteri data lab hari ini
-- [ ] Tautan konsep: [[icp-ms-core]] | [[quadrupole-mass-filter]] | [[qa-qc-validation]]
+*(Hasil dekonstruksi first-principles bersama mentor):*
+- [x] **Disparitas Eksitasi & Ionisasi**: [[perbandingan-spektrometri-emisi-dan-massa]] (Eksitasi Boltzmann ICP-OES vs Ionisasi Saha ICP-MS vs Tembakan Kinetik GC-MS 70 eV).
+- [x] **Dinamika Sel Kolisi & Flatapole**: [[icp-ms-interferensi-dan-qcell-ked]] (Dimensi spasial poliatomik vs monoatomik, trade-off STD vs KED, dan LMCO dinamis).
+- [x] **Mekanika Gerak Quadrupole**: [[mekanika-quadrupole-rf-dc]] (Inersia belokan, osilasi RF vs tarikan DC, resonansi parametrik pada sumbu DC positif).

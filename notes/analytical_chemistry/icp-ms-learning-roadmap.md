@@ -75,13 +75,13 @@ flowchart TD
 ### 📍 Tonggak 1: Fondasi Fisika Atomik & Termodinamika Ionisasi
 *Memahami mengapa dan bagaimana atom berubah wujud menjadi ion terukur.*
 
-- [ ] **1.1. Hierarki Eksitasi Atomik: AAS vs ICP-OES vs ICP-MS**
+- [x] **1.1. Hierarki Eksitasi Atomik: AAS vs ICP-OES vs ICP-MS** *(Selesai didekonstruksi di [[perbandingan-spektrometri-emisi-dan-massa]])*
   - Mengapa absorbsi optik (AAS) dan emisi optik (OES) terbatasi oleh dinamika linier (10³ - 10⁶), sedangkan deteksi ion langsung (MS) bisa mencapai 10⁹ (ppt hingga ppq)?
   - Batas deteksi vs fleksibilitas multi-unsur.
-- [ ] **1.2. Termodinamika Plasma Argon & Kesetimbangan Saha-Eggert**
+- [x] **1.2. Termodinamika Plasma Argon & Kesetimbangan Saha-Eggert** *(Selesai didekonstruksi di [[perbandingan-spektrometri-emisi-dan-massa]])*
   - Energi ionisasi pertama ($IE_1$) Argon = $15.76\text{ eV}$.
   - Mengapa hampir semua logam ($IE_1 < 10\text{ eV}$) terionisasi $> 90-99\%$ dalam plasma $7000\text{ K}$, sementara non-logam/metaloid ($As, Se, Hg, Cl$) memiliki derajat ionisasi jauh lebih rendah?
-- [ ] **1.3. Rasio Massa terhadap Muatan ($m/z$) dan Fenomena Isotopic Abundance**
+- [x] **1.3. Rasio Massa terhadap Muatan ($m/z$) dan Fenomena Isotopic Abundance** *(Selesai didekonstruksi di [[icp-ms-interferensi-dan-qcell-ked]])*
   - Definisi operasional $m/z$: ion dominan bermuatan tunggal ($M^+$) vs ion bermuatan ganda ($M^{2+}$, muncul di $m/2$).
   - Kelimpahan isotop alami: mengapa kita memilih isotop tertentu untuk kuantifikasi (misal $^{66}\text{Zn}$ vs $^{64}\text{Zn}$, atau $^{111}\text{Cd}$ vs $^{114}\text{Cd}$)?
 
@@ -129,10 +129,10 @@ flowchart TD
 - [ ] **3.4. Ion Optics & Background Suppression**
   - Efek *Space-Charge*: Mengapa ion-ion berat bermuatan positif cenderung menolak ion-ion ringan ke luar sumbu berkas ion?
   - Pembelokan 90° (*RAPID deflector lens*): Bagaimana ion diarahkan ke quadrupole sementara foton dan partikel netral lolos lurus ke peredam?
-- [ ] **3.5. Mass Analyzer: Quadrupole Filter**
+- [x] **3.5. Mass Analyzer: Quadrupole Filter** *(Selesai didekonstruksi di [[mekanika-quadrupole-rf-dc]])*
   - Fisika batang elektroda hiperbolik 4 kutub.
   - Kombinasi potensial statis (DC, $U$) dan potensial dinamis frekuensi radio (RF, $V \cos(\omega t)$).
-  - Diagram kestabilan Mathieu ($a, q$): Bagaimana variasi rasio $U/V$ memfilter hanya 1 nilai $m/z$ yang bisa berosilasi stabil melewati panjang kuadrupol.
+  - Diagram kestabilan Mathieu ($a, q$): Mengapa ion berat menabrak DC(-) dan mengapa ion ringan menabrak DC(+) via resonansi parametrik / overshoot mangkuk potensial.
 - [ ] **3.6. Detektor: Discrete Dynode Electron Multiplier**
   - Konversi tumbukan ion positif menjadi emisi elektron sekunder.
   - *Cascade amplification* ($10^7 - 10^8$ elektron per ion).
@@ -143,7 +143,7 @@ flowchart TD
 ### 📍 Tonggak 4: Dinamika Interferensi & Resolusi Spektral
 *Tantangan terbesar operator ICP-MS: membedakan sinyal analit asli dari "hantu" spektral.*
 
-- [ ] **4.1. Interferensi Spektral**
+- [x] **4.1. Interferensi Spektral** *(Selesai didekonstruksi di [[icp-ms-interferensi-dan-qcell-ked]])*
   - **Isobarik**: Dua unsur isotop stabil bermassa nominal identik ($^{114}\text{Cd}$ vs $^{114}\text{Sn}$, $^{40}\text{Ca}$ vs $^{40}\text{Ar}$).
   - **Poliatomik**: Gabungan komponen plasma ($Ar, O, N, H$) dan matriks sampel ($Cl, S, C$):
     - $^{40}\text{Ar}^{16}\text{O}^+$ mengganggu $^{56}\text{Fe}^+$
@@ -151,10 +151,11 @@ flowchart TD
     - $^{35}\text{Cl}^{16}\text{O}^+$ mengganggu $^{51}\text{V}^+$
     - $^{40}\text{Ar}^{40}\text{Ar}^+$ mengganggu $^{80}\text{Se}^+$
   - **Doubly Charged ($M^{2+}$)**: Ion bermuatan $+2$ muncul di setengah massanya ($^{136}\text{Ba}^{2+}$ mengganggu $^{68}\text{Zn}^+$).
-- [ ] **4.2. Mekanisme Resolusi Interferensi**
+- [x] **4.2. Mekanisme Resolusi Interferensi** *(Selesai didekonstruksi di [[icp-ms-interferensi-dan-qcell-ked]])*
   - **KED (Kinetic Energy Discrimination) dengan Gas Helium**:
     - Perbedaan ukuran fisik (*collision cross-section*): poliatomik lebih besar dari monoatomik.
     - Frekuensi tumbukan dengan Helium $\to$ degradasi energi kinetik poliatomik $\to$ penyaringan via *Potential Energy Barrier*.
+  - **Flatapole QCell (Thermo iCAP Q)**: Trade-off mode STD vs KED, collisional focusing, dan *dynamic low-mass cut-off*.
   - **Reaction Cell Mode ($\text{O}_2, \text{H}_2, \text{NH}_3$)**:
     - Termodinamika reaksi fase gas (*gas-phase ion-molecule reactions*).
     - Mass shifting analit (misal $^{75}\text{As}^+ + \text{O}_2 \to\ ^{91}[\text{AsO}]^+$).
