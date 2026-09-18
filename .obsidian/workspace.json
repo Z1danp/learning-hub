@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/analytical_chemistry/icp-ms-interferensi-dan-qcell-ked.md",
+                "file": "notes/analytical_chemistry/Validasi Metode/Equation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "icp-ms-interferensi-dan-qcell-ked"
+              "title": "Equation"
             }
           }
         ]
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "34d0235915bfa550",
@@ -193,24 +194,28 @@
   },
   "active": "7e5765212c14da85",
   "lastOpenFiles": [
+    "projects/valid-ex/services/analytics/src/__pycache__/sample_quant.cpython-314.pyc",
+    "projects/valid-ex/services/analytics/tests/__pycache__/test_sample_quant.cpython-314-pytest-9.1.1.pyc",
+    "projects/valid-ex/services/analytics/src/sample_quant.py",
+    "projects/valid-ex/services/analytics/tests/test_sample_quant.py",
+    "projects/valid-ex/services/analytics/src/calibration.ipynb",
+    "projects/valid-ex/pytest-cache-files-askckidx",
+    "projects/valid-ex/pyproject.toml",
+    "projects/valid-ex/services/analytics/tests/__pycache__/test_calibration.cpython-314.pyc",
+    "projects/valid-ex/services/analytics/src/__pycache__/__init__.cpython-314.pyc",
+    "projects/valid-ex/services/analytics/src/__pycache__/calibration.cpython-314.pyc",
+    "projects/valid-ex/services/analytics/src/__pycache__",
+    "notes/analytical_chemistry/Validasi Metode/Equation.md",
+    "GEMINI.md",
+    "Isi PPT.md",
     "notes/analytical_chemistry/icp-ms-learning-roadmap.md",
-    "notes/analytical_chemistry/perbandingan-spektrometri-emisi-dan-massa.md",
+    "README.md",
+    "Maintenance.md",
+    "Scratch.md",
     "notes/analytical_chemistry/icp-ms-interferensi-dan-qcell-ked.md",
     "notes/analytical_chemistry/mekanika-quadrupole-rf-dc.md",
-    "Scratch.md",
-    "references/Instrumentations/ICP-MS/OT32 - Materi Training ICP-MS (Principle, Instrumentations, and Applications) - INTENS (1).pdf",
-    "GEMINI.md",
-    "references/Instrumentations/ICP-MS/Robert Thomas - Practical Guide to ICP-MS_ A Tutorial for Beginners, Second Edition (Practical Spectroscopy) (2008, CRC Press) - libgen.li.pdf",
-    "references/Instrumentations/ICP-MS/Crouch, Stanley R._Holler, F. James_Skoog, Douglas A - Principles of Instrumental Analysis (2018_2016, CENGAGE Learning) - libgen.li.pdf",
+    "notes/analytical_chemistry/perbandingan-spektrometri-emisi-dan-massa.md",
     "notes/analytical_chemistry/prinsip-dasar-icp-ms.md",
-    "projects/expense-tracker/apps/server/dist/index.d.ts",
-    "projects/expense-tracker/apps/server/dist/index.d.ts.map",
-    "projects/expense-tracker/apps/server/dist/index.js",
-    "projects/expense-tracker/apps/server/dist/index.js.map",
-    "projects/expense-tracker/apps/server/dist/middlewares/auth.middleware.js.map",
-    "projects/expense-tracker/apps/server/dist/middlewares/auth.middleware.js",
-    "projects/expense-tracker/apps/server/dist/middlewares/auth.middleware.d.ts.map",
-    "README.md",
     "Learning Schedules.md",
     "project-docs/expense-tracker/AI Generated/Documentations/BE-Accounts/README.md",
     "project-docs/expense-tracker/AI Generated/Documentations/BE-Auth/README.md",
@@ -225,10 +230,6 @@
     "kanban/Stage 2 - CS Fundamental.md",
     "Untitled Kanban.md",
     "kanban/Tanpa judul.md",
-    "notes/webdev/istilah/backlog-fitur.md",
-    "Excalidraw/Drawing 2026-09-06 13.44.17.excalidraw.md",
-    "Excalidraw/Drawing 2026-09-06 13.43.58.excalidraw.md",
-    "projects/expense-tracker/node_modules/react-router/docs/explanation/type-safety.md",
     "projects/expense-tracker/apps/client/public/favicon.svg",
     "projects/expense-tracker/apps/client/public/icons.svg",
     "projects/expense-tracker/apps/client/dist/icons.svg",

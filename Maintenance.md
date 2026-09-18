@@ -1,0 +1,1 @@
+1. Cuci Torch dan Spray Chamber dengan aqua regia 10%
