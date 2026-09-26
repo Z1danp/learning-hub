@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "66b20627835224ea",
+        "id": "bd755669f8657777",
         "type": "tabs",
         "children": [
           {
-            "id": "7e5765212c14da85",
+            "id": "e251261814d5c141",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/analytical_chemistry/Validasi Metode/Equation.md",
+                "file": "project-docs/valid-ex/CONTEXT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Equation"
+              "title": "CONTEXT"
             }
           }
         ]
@@ -46,7 +46,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Penjelajah berkas"
+              "title": "Files"
             }
           },
           {
@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "34d0235915bfa550",
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/cheminformatics/molecular-descriptors-and-qsar.md",
+                "file": "notes/analytical_chemistry/isi-ppt.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +109,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlink"
+              "title": "Backlinks"
             }
           },
           {
@@ -180,56 +179,56 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "zk-prefixer:Create new unique note": false,
+      "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Create new board": false,
-      "switcher:Buka peralih cepat": false,
-      "graph:Buka tampilan grafik": false,
-      "canvas:Buat kanvas baru": false,
-      "daily-notes:Buka catatan hari ini": false,
-      "templates:Masukkan template": false,
-      "command-palette:Buka palet perintah": false,
-      "bases:Buat basis baru": false,
-      "zk-prefixer:Buat catatan unik baru": false
+      "obsidian-kanban:Create new board": false
     }
   },
-  "active": "7e5765212c14da85",
+  "active": "e251261814d5c141",
   "lastOpenFiles": [
-    "projects/valid-ex/services/analytics/src/__pycache__/sample_quant.cpython-314.pyc",
-    "projects/valid-ex/services/analytics/tests/__pycache__/test_sample_quant.cpython-314-pytest-9.1.1.pyc",
-    "projects/valid-ex/services/analytics/src/sample_quant.py",
-    "projects/valid-ex/services/analytics/tests/test_sample_quant.py",
-    "projects/valid-ex/services/analytics/src/calibration.ipynb",
-    "projects/valid-ex/pytest-cache-files-askckidx",
-    "projects/valid-ex/pyproject.toml",
-    "projects/valid-ex/services/analytics/tests/__pycache__/test_calibration.cpython-314.pyc",
-    "projects/valid-ex/services/analytics/src/__pycache__/__init__.cpython-314.pyc",
-    "projects/valid-ex/services/analytics/src/__pycache__/calibration.cpython-314.pyc",
-    "projects/valid-ex/services/analytics/src/__pycache__",
+    "projects/valid-ex/apps/gateway/drizzle/0000_sour_micromax.sql",
+    "projects/valid-ex/apps/gateway/drizzle/meta/0000_snapshot.json",
+    "projects/valid-ex/apps/gateway/drizzle/meta/_journal.json",
+    "projects/valid-ex/apps/gateway/drizzle/meta",
+    "projects/valid-ex/apps/gateway/drizzle",
+    "projects/valid-ex/apps/gateway/node_modules/@valid-ex",
+    "projects/valid-ex/apps/gateway/node_modules/@neondatabase",
+    "projects/valid-ex/apps/gateway/node_modules/@cloudflare",
+    "projects/valid-ex/apps/gateway/node_modules",
+    "projects/valid-ex/apps/gateway/src/index.ts",
+    "projects/valid-ex/apps/gateway/src/db/index.ts",
+    "project-docs/valid-ex/INVARIANTS.md",
+    "project-docs/valid-ex/CONTEXT.md",
+    "project-docs/valid-ex/my-brain/Build Valid-Ex  Web App CONTEXT.md",
+    "project-docs/valid-ex/ai-sparring/auth-schema-sparring.md",
     "notes/analytical_chemistry/Validasi Metode/Equation.md",
-    "GEMINI.md",
-    "Isi PPT.md",
-    "notes/analytical_chemistry/icp-ms-learning-roadmap.md",
-    "README.md",
-    "Maintenance.md",
-    "Scratch.md",
-    "notes/analytical_chemistry/icp-ms-interferensi-dan-qcell-ked.md",
+    "notes/webdev/openapi-dan-api-contract.md",
+    "project-docs/valid-ex/ai-sparring/README.md",
+    "notes/webdev/spec-invariants-dan-ai-alignment.md",
+    "Untitled.md",
     "notes/analytical_chemistry/mekanika-quadrupole-rf-dc.md",
-    "notes/analytical_chemistry/perbandingan-spektrometri-emisi-dan-massa.md",
-    "notes/analytical_chemistry/prinsip-dasar-icp-ms.md",
-    "Learning Schedules.md",
-    "project-docs/expense-tracker/AI Generated/Documentations/BE-Accounts/README.md",
-    "project-docs/expense-tracker/AI Generated/Documentations/BE-Auth/README.md",
     "notes/webdev/production-grade-anatomy.md",
-    "notes/webdev/CS Abstraction/cs-abstraction-roadmap.md",
-    "notes/webdev/compass/First Principles coding.md",
-    "notes/webdev/Database Migrations.md",
-    "project-docs/expense-tracker/MILESTONE 1 DATA MASTER.md",
-    "notes/webdev/istilah/Tanpa judul.md",
-    "project-docs/expense-tracker/milestone.md",
-    "kanban/Stage 1 - CS Fundamental.md",
-    "kanban/Stage 2 - CS Fundamental.md",
-    "Untitled Kanban.md",
-    "kanban/Tanpa judul.md",
+    "project-docs/valid-ex/my-brain/README.md",
+    "GEMINI.md",
+    "notes/webdev/raw_thoughts/ADR.md",
+    "notes/analytical_chemistry/isi-ppt.md",
+    "notes/analytical_chemistry/icp-plasma-physics-and-saha-equation.md",
+    "notes/analytical_chemistry/icp-ms-learning-roadmap.md",
+    "notes/webdev/raw_thoughts/README.md",
+    "FRAMEWORK.md",
+    "ENGINEERING_MANIFESTO.md",
+    "Isi PPT.md",
+    "project-docs/expense-tracker/AI Generated/Documentations/BE-Accounts/README.md",
+    "notes/analytical_chemistry/raw_thoughts/README.md",
+    "project-docs/valid-ex/adr/README.md",
+    "README.md",
     "projects/expense-tracker/apps/client/public/favicon.svg",
     "projects/expense-tracker/apps/client/public/icons.svg",
     "projects/expense-tracker/apps/client/dist/icons.svg",

@@ -26,11 +26,12 @@ related:
 ```mermaid
 flowchart TD
     subgraph S1["Fase 1: Preparasi & Kimia Larutan"]
-        A[Sampel Uji: Air / Biologis / Batuan] --> B{Metode Dekomposisi}
-        B -->|AMDK / Air Alami| B1["Filtrasi 0.45 µm + Acidification (1-2% HNO3)"]
-        B -->|Organik / Pangan / Jaringan| B2["Microwave Digestion (HNO3 + H2O2)"]
-        B -->|Silika / Batuan Refraktori| B3["HF Digestion (HF-Resistant Kit)"]
-        B1 & B2 & B3 --> C["Kondisi Akhir: Bening, TDS < 0.2%, Spiking ISTD & Au"]
+        A[Sampel Uji: Air / Walet / Sedimen / Batuan] --> B{Metode Dekomposisi}
+        B -->|AMDK / Air Alami| B1["Filtrasi 0.45 µm + Asidifikasi (1-2% HNO3)"]
+        B -->|Sarang Walet / Organik Kering| B2["Microwave Digestion (HNO3 Pekat - Tanpa Perlu Venting Suhu Ruang)"]
+        B -->|Sedimen / Mineral / Logam Berat| B3["Microwave Digestion (Campuran HNO3 + HCl - Wajib Degassing 15-30 Menit)"]
+        B -->|Silika Total / Batuan Refraktori| B4["HF Digestion (HF-Resistant Kit / Netralisasi H3BO3)"]
+        B1 & B2 & B3 & B4 --> C["Kondisi Akhir: Bening, TDS < 0.2%, Spiking ISTD & Au"]
     end
 
     subgraph S2["Fase 2: Sample Introduction & Plasma Torch"]
@@ -98,7 +99,8 @@ flowchart TD
   - Apa yang terjadi pada lubang *orifice cone* ($\approx 1\text{ mm}$) jika larutan bergaram tinggi diinjeksi?
 - [ ] **2.2. Strategi Dekomposisi: Wet Digestion vs Dry Ashing**
   - Kelemahan fatal *Dry Ashing* (furnace $550^\circ\text{C}$) terhadap unsur volatil ($As, Hg, Se, Pb, Cd$).
-  - Keunggulan *Closed-Vessel Microwave Digestion* (suhu $\sim 195^\circ\text{C}$, tekanan puluhan bar): retensi analit volatil, konsumsi asam minimal, waktu destruksi singkat.
+  - Keunggulan *Closed-Vessel Microwave Digestion* (suhu $\sim 190-210^\circ\text{C}$, tekanan puluhan bar): retensi analit volatil, konsumsi asam minimal, waktu destruksi singkat.
+  - **Kinetika Suhu Ruang vs Microwave**: Mengapa matriks protein kering (walet) bisa langsung disegel tanpa venting suhu ruang, sedangkan campuran asam tertentu atau matriks karbonat membutuhkan jeda *pre-digestion degassing*?
 - [ ] **2.3. Kimia Reagen Asam & Kompatibilitas Matriks**
   - **$\text{HNO}_3$ (Ultrapure)**: Mengapa menjadi pelarut utama tak tergantikan di ICP-MS? (Fisika di balik matriks $H, N, O$).
   - **$\text{HCl}$**: Kapan wajib digunakan (stabilisasi $Au, Pt, Pd, Hg, Sn$), dan mengapa dihindari untuk analit $As$ dan $V$ ($^{40}\text{Ar}^{35}\text{Cl}^+$ dan $^{35}\text{Cl}^{16}\text{O}^+$)?
@@ -107,17 +109,26 @@ flowchart TD
 - [ ] **2.4. Kontrol Kontaminasi & Efek Memori (Memory Effect)**
   - Mengapa botol kaca dilarang dan harus menggunakan plastik asam-tercuci (*acid-washed* PE/PP/PFA)?
   - Mekanisme stabilisasi Merkuri ($Hg$) menggunakan penambahan trace Gold ($\text{Au}^{3+} \approx 200\ \mu\text{g/L}$).
+- [ ] **2.5. Protokol Matriks Riil Meja Lab (Bench-Level Matrix Protocols)**
+  - **Matriks Sarang Burung Walet (EBN)**:
+    - Karakteristik: Matriks glikoprotein murni ($\approx 50-60\%$ protein, $\approx 30\%$ karbohidrat).
+    - SOP Destruksi: Timbang $\approx 0.2000\text{ g}$ serbuk $+ 8\text{ mL}\ \text{HNO}_3$ pekat $\to$ tutup rapat langsung (reaksi lambat di suhu ruang) $\to$ Microwave MARS6 / Ethos pada $190^\circ\text{C}$ ($\pm 100\text{ menit}$) $\to$ labu takar $50\text{ mL}$.
+    - Bahaya *Dissolved Organic Carbon* (DOC): Mengapa sisa karbon belum hancur bisa mendistorsi ionisasi As/Se di plasma dan mengotori cone.
+  - **Matriks Sedimen & Non-Walet (Campuran $\text{HNO}_3 + \text{HCl}$)**:
+    - Mengapa campuran $\text{HNO}_3 + \text{HCl}$ (Aqua Regia / Inverse Aqua Regia) bereaksi spontan pada suhu ruang menghasilkan gas bertekanan: $\text{HNO}_3 + 3\text{HCl} \to \text{NOCl}_{(g)} + \text{Cl}_{2(g)} + 2\text{H}_2\text{O}$.
+    - Mengapa sampel mineral/karbonat berbusa ($\text{CO}_2 \uparrow$) dan **wajib di-degassing 15–30 menit** di ruang asam sebelum vessel ditutup rapat untuk mencegah overpressure dini.
+    - Fraksi Lindi (*Pseudo-Total* EPA 3050B) vs Pelarutan Total Silika ($\text{HF}$).
 
 ---
 
 ### 📍 Tonggak 3: Arsitektur Instrumen & Rekayasa Lintasan Ion
 *Membedah setiap modul mekanik dari botol sampel hingga detektor.*
 
-- [ ] **3.1. Sistem Introduksi Sampel (Sample Introduction)**
+- [x] **3.1. Sistem Introduksi Sampel (Sample Introduction)** *(Selesai didekonstruksi di [[sample-introduction-and-nebulization]])*
   - **Peristaltic Pump & Tubing**: pulsasi, laju alir ($\sim 400\ \mu\text{L/min}$), dan relaksasi tubing.
   - **Nebulizer (Concentric / MicroMist)**: Efek Venturi dan disrupsi fluida gas-cair.
   - **Spray Chamber (Cyclonic / Scott)**: Penyaringan droplet berdasarkan momentum dan gravitasi. Mengapa hanya $\sim 1-2\%$ droplet ($< 5\ \mu\text{m}$) yang boleh masuk ke torch?
-- [ ] **3.2. Pembangkit Plasma (ICP Torch & RF Induction)**
+- [x] **3.2. Pembangkit Plasma (ICP Torch & RF Induction)** *(Selesai didekonstruksi di [[icp-plasma-physics-and-saha-equation]])*
   - Tiga aliran gas Argon: Plasma gas ($12-18\text{ L/min}$), Auxiliary gas ($0.75-2\text{ L/min}$), Nebulizer/Carrier gas ($\sim 1\text{ L/min}$).
   - Transfer energi RF (daya $750-1500\text{ W}$, frekuensi $27/40\text{ MHz}$) ke elektron melalui koil induksi.
   - 4 zona plasma aksial: *Desolvation $\to$ Vaporization $\to$ Atomization $\to$ Ionization*.
@@ -187,6 +198,13 @@ flowchart TD
   - *Initial Calibration Verification (ICV)* & *Continuing Calibration Verification (CCV)*: Recovery $90 - 110\%$.
   - *Matrix Spike (MS)* & *Matrix Spike Duplicate (MSD)*: Recovery $75 - 125\%$, RPD $\le 20\%$.
   - Batas Deteksi: Perhitungan $\text{LOD} = 3 \times \frac{s_b}{m}$ dan $\text{LOQ} = 10 \times \frac{s_b}{m}$.
+- [ ] **5.4. Pipa Transformasi Data & Reduksi Metrologis (Software $\to$ Spreadsheet $\to$ CoA/Publikasi)**
+  - **The Gravimetric-Volumetric Master Equation**:
+    $$W_{\text{analit}}\ (\text{mg/kg atau ppm}) = \frac{(C_{\text{sampel}} - C_{\text{blank}})\ [\mu\text{g/L}] \times V\ [\text{mL}] \times dF}{m_{\text{sampel}}\ [\text{g}] \times 1000}$$
+  - **Pembedaan Krusial Blank**: Blank Baku (*Calibration Blank*) vs Blank Metode (*Blank Mars/Ethos*).
+  - **Penyensoran Data (*Metrological Censoring*)**: Penanganan nilai di bawah limit deteksi (wajib dilaporkan `"< LOQ"`, bukan `0.00` atau angka negatif hasil ekstrapolasi regresi).
+  - **Aturan Pengenceran Lanjutan (*Over-Range Dilution*)**: Deteksi analit yang melebihi batas atas kurva kalibrasi linear ($> 1000\text{ ppb}$) dan propagasi faktor pengenceran ($dF$).
+  - **Presisi Replikasi Batch**: Evaluasi RPD (*Relative Percent Difference*) antar injeksi Simplo, Duplo, dan Triplo ($\text{RPD} \le 20\%$).
 
 ---
 
@@ -210,6 +228,7 @@ flowchart TD
 2. Buat catatan dekonstruksi mendalam untuk tiap komponen hardware:
    - [[sample-introduction-and-nebulization]]
    - [[icp-plasma-physics-and-saha-equation]]
+   - [[mekanisme-ionisasi-analit-di-plasma]]
    - [[interface-cones-and-vacuum-mechanics]]
    - [[collision-reaction-cell-and-ked-mode]]
    - [[quadrupole-and-mathieu-stability]]
@@ -218,3 +237,4 @@ flowchart TD
    - [[microwave-acid-digestion-protocols]]
    - [[spectral-and-non-spectral-interferences]]
    - [[icp-ms-qa-qc-and-metrology]]
+   - [[icp-ms-tuning-qc-dan-lab-sparring]]
