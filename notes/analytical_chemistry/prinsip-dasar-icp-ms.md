@@ -71,3 +71,5 @@ related:
 - [x] **Disparitas Eksitasi & Ionisasi**: [[perbandingan-spektrometri-emisi-dan-massa]] (Eksitasi Boltzmann ICP-OES vs Ionisasi Saha ICP-MS vs Tembakan Kinetik GC-MS 70 eV).
 - [x] **Dinamika Sel Kolisi & Flatapole**: [[icp-ms-interferensi-dan-qcell-ked]] (Dimensi spasial poliatomik vs monoatomik, trade-off STD vs KED, dan LMCO dinamis).
 - [x] **Mekanika Gerak Quadrupole**: [[mekanika-quadrupole-rf-dc]] (Inersia belokan, osilasi RF vs tarikan DC, resonansi parametrik pada sumbu DC positif).
+- [x] **Aerodinamika Antarmuka & Vakum Cones**: [[interface-cones-and-vacuum-mechanics]] (Ekspansi supersonik free-jet, Mach disk, Zone of Silence, differential pumping, dan disipasi panas konduktif).
+- [x] **Optik Ion & Space-Charge Effect**: [[ion-optics-and-space-charge]] (Difusi elektron kilat, ledakan Coulomb repulsi kation, defleksi 90° eliminasi foton RAPID lens, dan dynamic lens ramping).

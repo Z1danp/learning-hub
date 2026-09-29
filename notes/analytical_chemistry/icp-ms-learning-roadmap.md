@@ -132,12 +132,12 @@ flowchart TD
   - Tiga aliran gas Argon: Plasma gas ($12-18\text{ L/min}$), Auxiliary gas ($0.75-2\text{ L/min}$), Nebulizer/Carrier gas ($\sim 1\text{ L/min}$).
   - Transfer energi RF (daya $750-1500\text{ W}$, frekuensi $27/40\text{ MHz}$) ke elektron melalui koil induksi.
   - 4 zona plasma aksial: *Desolvation $\to$ Vaporization $\to$ Atomization $\to$ Ionization*.
-- [ ] **3.3. Interface System & Fisika Vakum Bertingkat**
+- [x] **3.3. Interface System & Fisika Vakum Bertingkat** *(Selesai didekonstruksi di [[interface-cones-and-vacuum-mechanics]])*
   - Transisi dari tekanan atmosfer ($760\text{ Torr}$) ke High Vacuum ($10^{-4}\text{ Torr}$) dan Ultra-High Vacuum ($10^{-7}\text{ Torr}$).
   - *Sampler Cone* (lubang $\sim 1.0\text{ mm}$) dan *Skimmer Cone* (lubang $\sim 0.5\text{ mm}$).
   - Pembentukan *supersonic jet expansion* dan *Mach disk*. Mengapa posisi ujung skimmer cone harus tepat berada di *zone of silence*?
   - Perbedaan material: Nickel (Ni) cone vs Platinum (Pt) cone (kapan harus menggunakan Pt?).
-- [ ] **3.4. Ion Optics & Background Suppression**
+- [x] **3.4. Ion Optics & Background Suppression** *(Selesai didekonstruksi di [[ion-optics-and-space-charge]])*
   - Efek *Space-Charge*: Mengapa ion-ion berat bermuatan positif cenderung menolak ion-ion ringan ke luar sumbu berkas ion?
   - Pembelokan 90° (*RAPID deflector lens*): Bagaimana ion diarahkan ke quadrupole sementara foton dan partikel netral lolos lurus ke peredam?
 - [x] **3.5. Mass Analyzer: Quadrupole Filter** *(Selesai didekonstruksi di [[mekanika-quadrupole-rf-dc]])*
@@ -230,6 +230,7 @@ flowchart TD
    - [[icp-plasma-physics-and-saha-equation]]
    - [[mekanisme-ionisasi-analit-di-plasma]]
    - [[interface-cones-and-vacuum-mechanics]]
+   - [[ion-optics-and-space-charge]]
    - [[collision-reaction-cell-and-ked-mode]]
    - [[quadrupole-and-mathieu-stability]]
    - [[electron-multiplier-detector]]

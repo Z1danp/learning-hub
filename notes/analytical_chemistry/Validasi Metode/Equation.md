@@ -115,6 +115,8 @@ $$\text{Hasil (mg/kg)} = \frac{(E_{\text{sampel}} - E_{\text{blank}}) \times V_{
 $$\frac{\text{mg}}{\text{L}} \times \text{mL} \times \left(10^{-3}\ \frac{\text{L}}{\text{mL}}\right) \times \frac{1}{\text{g} \times \left(10^{-3}\ \frac{\text{kg}}{\text{g}}\right)} = \frac{\text{mg}}{\text{kg}}$$
 *(Faktor pengali $10^{-3}$ di pembilang dan penyebut saling menghilangkan).*
 
+> ⚠️ **Unit-Aware (Anti-Galat $1000\times$)**: rumus di atas valid bila $C$ dalam $\text{mg/L}$ (ppm). Bila $C$ dalam $\mu\text{g/L}$ (ppb), hasilnya menjadi $\frac{C \times V \times dF}{W \times 1000}$; untuk $\text{ppt}$ (ng/L) beda lagi. `@valid-ex/math` memakai tabel konversi dimensi eksplisit berbasis `solutionConcUnit`/`solidResultUnit`/`weightUnit`/`volumeUnit`, DILARANG meng-hardcode `/1000` ([[project-docs/valid-ex/INVARIANTS|Invariant D3]]).
+
 *Logika Guardrail di Excel*:
 ```excel
 =IF((E8-E$6)*C8*D8/(B8) < 0, "0.00", (E8-E$6)*C8*D8/(B8))
@@ -130,7 +132,9 @@ Jika hasil pengurangan blanko bernilai negatif (karena fluktuasi noise di bawah 
 | **Linearitas Kurva ($r$)** | Koefisien korelasi Pearson | $r \ge 0.995$ |
 | **Recovery Cek Standar (ICV/CRM)** | $\text{Rec} = \frac{C_{\text{terukur}}}{C_{\text{sebenarnya}}} \times 100\%$ | $100 \pm 10\%$ ($90\% - 110\%$) |
 | **Spike Recovery Sampel** | $\text{Rec} = \frac{C_{\text{spike}} - C_{\text{unspiked}}}{C_{\text{target spike}}} \times 100\%$ | $60\% - 115\%$ |
-| **Presisi Duplo (RPD)** | $\text{RPD} = \frac{\|S_1 - S_2\|}{(S_1 + S_2)/2} \times 100\%$ | $\le 20\%$ |
+| **Presisi Duplo (RPD)** | $\text{RPD} = \frac{\|S_1 - S_2\|}{(S_1 + S_2)/2} \times 100\%$ | $\le 25\%$ |
+
+> **Catatan ([[project-docs/valid-ex/adr/0007-governed-qc-criteria-profiles|ADR-0007]])**: angka di tabel ini adalah **isi profil kriteria QC lab (SOP "QC CRITERIA CHECK")**, bukan konstanta universal. `valid-ex` tidak meng-hardcode-nya; kriteria disimpan sebagai profil ber-versi yang bisa punya **band per tingkat konsentrasi** (lihat AOAC Appendix F Table A5).
 
 ---
 

@@ -40,3 +40,4 @@
 	- Blank, Calibration verification (CCV/QC standard), CRM, dan Spike Recovery.
 - Keausan tubing peristaltik (fluktuasi sinyal / presisi buruk)
 - Kebersihan sample/skimmer cone (kapan harus sonikasi/dibersihkan)
+- Ma
