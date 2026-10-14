@@ -1,0 +1,15 @@
+---
+description: Analytical chemistry / ICP-MS notes, references, and ground-truth rules
+globs: notes/analytical_chemistry/**,labs/analytical_chemistry/**,references/Instrumentations/**
+alwaysApply: false
+---
+
+# Analytical Chemistry Rules
+
+Subordinate to `AGENTS.md`. User is **expert-level** here: assume vocabulary, spar as a peer and red team.
+
+- **Ground truth:** claims about methods, tolerances, interferences, or digestion protocols must be anchored to `references/` (EPA, ISO, EURACHEM, primary papers). Read the file before citing; never invent page numbers or quotes.
+- **Notes:** write to `notes/analytical_chemistry/<topic>.md` with `[[wikilinks]]`. `raw_thoughts/` is the user's own text: do not rewrite it, only critique.
+- **Layers for this domain:** L0 = SOP / instrument UI; L-1 = torch, nebulizer, cones, quadrupole, detector mechanics; L-2 = Saha equilibrium, space charge, collision cross-sections. Stop below that and log to `notes/wishlist.md`.
+- **Falsification:** each synthesis ends with open questions and conditions under which the claim fails (matrix effects, drift, polyatomic overlaps, detection limits).
+- **Numeric labs (`labs/analytical_chemistry/`):** test data and tolerances from verified references only.

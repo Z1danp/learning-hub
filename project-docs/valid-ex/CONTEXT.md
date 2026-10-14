@@ -80,7 +80,7 @@ graph TD
 
 - [x] **Milestone 1: API Contract Design (`packages/contracts/openapi.yaml`)**
   - Complete OpenAPI 3.0+ specification covering Auth, OLS Calibration, Sample Quantification, binary Spreadsheet Export, dan Governed QC Criteria Profiles.
-- [ ] **Milestone 2: Monorepo Scaffolding & Core Math Engine (`@valid-ex/math`)** — 🔄 In Progress
+- [x] **Milestone 2: Monorepo Scaffolding & Core Math Engine (`@valid-ex/math`)** — 🔄 In Progress
   - Initialize pnpm workspace (`packages/contracts`, `packages/math`); `apps/*` ditunda ke Milestone 4/5.
   - Implement TDD (Vitest) for analytical chemistry math modules: OLS regression (centered, anti-cancellation), residual $s_{y/x}$, LOD/LOQ, unit-aware solid quantification, 3-zone censoring, banded QC criteria resolver, dan soft-flag QC gating.
   - Ground-truth anchoring: Python stdlib `statistics`, NIST StRD (OLS), SOP lab (kriteria QC), file lab nyata (E2E).
@@ -113,6 +113,6 @@ graph TD
 - [[notes/webdev/spec-invariants-dan-ai-alignment|Framework Spec & Invariants, Red Team Testing, dan AI Alignment]]
 - [[notes/webdev/Database Migrations|Database Migrations & Data Integrity]]
 - [[notes/analytical_chemistry/Validasi Metode/Equation|Validasi Metode: Persamaan Matematis, LOD/LOQ, & Evaluasi Data]]
-- [[notes/analytical_chemistry/icp-ms-tuning-qc-dan-lab-sparring|Catatan Kritis ICP-MS: Regulasi QC ISO 17025 & Meja Preparasi]]
+- [[icp-ms-tuning-qc-dan-lab-sparring|Catatan Kritis ICP-MS: Regulasi QC ISO 17025 & Meja Preparasi]]
 - EURACHEM Guide: *The Fitness for Purpose of Analytical Methods (2nd ed.)*
 - ISO/IEC 17025:2017: *General requirements for the competence of testing and calibration laboratories*

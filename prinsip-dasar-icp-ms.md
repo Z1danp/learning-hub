@@ -73,3 +73,5 @@ related:
 - [x] **Mekanika Gerak Quadrupole**: [[mekanika-quadrupole-rf-dc]] (Inersia belokan, osilasi RF vs tarikan DC, resonansi parametrik pada sumbu DC positif).
 - [x] **Aerodinamika Antarmuka & Vakum Cones**: [[interface-cones-and-vacuum-mechanics]] (Ekspansi supersonik free-jet, Mach disk, Zone of Silence, differential pumping, dan disipasi panas konduktif).
 - [x] **Optik Ion & Space-Charge Effect**: [[ion-optics-and-space-charge]] (Difusi elektron kilat, ledakan Coulomb repulsi kation, defleksi 90° eliminasi foton RAPID lens, dan dynamic lens ramping).
+- [x] **Detektor Pengganda Elektron Diskrit**: [[electron-multiplier-detector]] (Multiplikasi kaskade sekunder G = δⁿ, sadapan simultan midpoint analog vs anoda pulse counting, dan koreksi dead time).
+- [x] **Kimia Larutan & Destruksi Microwave**: [[microwave-acid-digestion-protocols]] (Pemanasan dielektrik 2.45 GHz, akselerasi Arrhenius 190°C/40 bar, komparasi walet vs sedimen, bahaya DOC Carbon Enhancement, dan 6 asumsi fondasional ICP-MS).

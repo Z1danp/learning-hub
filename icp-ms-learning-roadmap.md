@@ -94,22 +94,22 @@ flowchart TD
 ### 📍 Tonggak 2: Kimia Larutan & Preparasi Sampel (Sample Preparation)
 *ICP-MS sangat sensitif, yang berarti ia juga sangat mudah terkontaminasi dan rusak oleh matriks larutan.*
 
-- [ ] **2.1. Batasan Fisik Instrumen: Toleransi TDS (*Total Dissolved Solids*)**
+- [x] **2.1. Batasan Fisik Instrumen: Toleransi TDS (*Total Dissolved Solids*)** *(Selesai didekonstruksi di [[microwave-acid-digestion-protocols]])*
   - Mengapa larutan sampel ICP-MS **wajib memiliki TDS $< 0.2\%$ ($< 2000\text{ ppm}$)**, dan idealnya $< 0.1\%$?
   - Apa yang terjadi pada lubang *orifice cone* ($\approx 1\text{ mm}$) jika larutan bergaram tinggi diinjeksi?
-- [ ] **2.2. Strategi Dekomposisi: Wet Digestion vs Dry Ashing**
+- [x] **2.2. Strategi Dekomposisi: Wet Digestion vs Dry Ashing** *(Selesai didekonstruksi di [[microwave-acid-digestion-protocols]])*
   - Kelemahan fatal *Dry Ashing* (furnace $550^\circ\text{C}$) terhadap unsur volatil ($As, Hg, Se, Pb, Cd$).
   - Keunggulan *Closed-Vessel Microwave Digestion* (suhu $\sim 190-210^\circ\text{C}$, tekanan puluhan bar): retensi analit volatil, konsumsi asam minimal, waktu destruksi singkat.
   - **Kinetika Suhu Ruang vs Microwave**: Mengapa matriks protein kering (walet) bisa langsung disegel tanpa venting suhu ruang, sedangkan campuran asam tertentu atau matriks karbonat membutuhkan jeda *pre-digestion degassing*?
-- [ ] **2.3. Kimia Reagen Asam & Kompatibilitas Matriks**
+- [x] **2.3. Kimia Reagen Asam & Kompatibilitas Matriks** *(Selesai didekonstruksi di [[microwave-acid-digestion-protocols]])*
   - **$\text{HNO}_3$ (Ultrapure)**: Mengapa menjadi pelarut utama tak tergantikan di ICP-MS? (Fisika di balik matriks $H, N, O$).
   - **$\text{HCl}$**: Kapan wajib digunakan (stabilisasi $Au, Pt, Pd, Hg, Sn$), dan mengapa dihindari untuk analit $As$ dan $V$ ($^{40}\text{Ar}^{35}\text{Cl}^+$ dan $^{35}\text{Cl}^{16}\text{O}^+$)?
   - **$\text{HF}$**: Melarutkan silikat & refraktori ($Ti, Zr, W, Nb$). Mengapa butuh *inert sample intro kit* (PFA/sapphire spray chamber & torch)?
   - **$\text{H}_2\text{SO}_4$ & $\text{HClO}_4$**: Mengapa dilarang keras/sangat dihindari pada ICP-MS rutin?
-- [ ] **2.4. Kontrol Kontaminasi & Efek Memori (Memory Effect)**
+- [x] **2.4. Kontrol Kontaminasi & Efek Memori (Memory Effect)** *(Selesai didekonstruksi di [[microwave-acid-digestion-protocols]])*
   - Mengapa botol kaca dilarang dan harus menggunakan plastik asam-tercuci (*acid-washed* PE/PP/PFA)?
   - Mekanisme stabilisasi Merkuri ($Hg$) menggunakan penambahan trace Gold ($\text{Au}^{3+} \approx 200\ \mu\text{g/L}$).
-- [ ] **2.5. Protokol Matriks Riil Meja Lab (Bench-Level Matrix Protocols)**
+- [x] **2.5. Protokol Matriks Riil Meja Lab (Bench-Level Matrix Protocols)** *(Selesai didekonstruksi di [[microwave-acid-digestion-protocols]])*
   - **Matriks Sarang Burung Walet (EBN)**:
     - Karakteristik: Matriks glikoprotein murni ($\approx 50-60\%$ protein, $\approx 30\%$ karbohidrat).
     - SOP Destruksi: Timbang $\approx 0.2000\text{ g}$ serbuk $+ 8\text{ mL}\ \text{HNO}_3$ pekat $\to$ tutup rapat langsung (reaksi lambat di suhu ruang) $\to$ Microwave MARS6 / Ethos pada $190^\circ\text{C}$ ($\pm 100\text{ menit}$) $\to$ labu takar $50\text{ mL}$.
@@ -144,7 +144,7 @@ flowchart TD
   - Fisika batang elektroda hiperbolik 4 kutub.
   - Kombinasi potensial statis (DC, $U$) dan potensial dinamis frekuensi radio (RF, $V \cos(\omega t)$).
   - Diagram kestabilan Mathieu ($a, q$): Mengapa ion berat menabrak DC(-) dan mengapa ion ringan menabrak DC(+) via resonansi parametrik / overshoot mangkuk potensial.
-- [ ] **3.6. Detektor: Discrete Dynode Electron Multiplier**
+- [x] **3.6. Detektor: Discrete Dynode Electron Multiplier** *(Selesai didekonstruksi di [[electron-multiplier-detector]])*
   - Konversi tumbukan ion positif menjadi emisi elektron sekunder.
   - *Cascade amplification* ($10^7 - 10^8$ elektron per ion).
   - Transisi otomatis dari *Pulse Counting Mode* ke *Analog Mode*.
