@@ -3,7 +3,7 @@
 > **Status**: Active Architecture & Clean Slate Monorepo  
 > **Domain**: Analytical Chemistry Method Validation (ISO/IEC 17025 & EURACHEM Compliant)  
 > **Repo Structure**: Monorepo (`projects/valid-ex`) via `pnpm`  
-> **Architecture Decision Record**: [[notes/webdev/openapi-dan-api-contract|OpenAPI Specification (Design-First)]] | [[project-docs/valid-ex/ai-sparring/auth-schema-sparring|Auth Schema (Option 1)]]
+> **Architecture Decision Record**: [[notes/webdev/openapi-dan-api-contract|OpenAPI Specification (Design-First)]] | [[project-docs/valid-ex/ai-sparring/auth-schema-sparring|Auth Schema (Option 1)]] | [[project-docs/valid-ex/adr/0008-sample-row-export|ADR-0008 Sample-Row Schema]]
 
 ---
 
@@ -42,12 +42,12 @@ graph TD
   - `packages/contracts/`: The `openapi.yaml` specification and generated shared types (`@valid-ex/contracts`).
 
 ### 3. Authentication & Database Schema (Option 1 - Pragmatic Single Table)
-- **Database**: Neon Serverless PostgreSQL via Drizzle ORM (Connected via `@neondatabase/serverless` HTTP pooler to prevent *connection starvation* in Vercel's serverless environment).
+- **Database**: Neon Serverless PostgreSQL via Drizzle ORM. Kueri transaksi memakai WebSocket pool `@neondatabase/serverless` (Invariant T4 dan T6). Skema tabel: [[project-docs/valid-ex/adr/0008-sample-row-export|ADR-0008]].
 - **Authentication Strategy**: Single `users` table with a PostgreSQL `CHECK` constraint:
   - Local Email/Password: `password_hash` is mandatory.
   - Google OAuth: `password_hash` is `NULL`, `auth_provider = 'google'`, `google_id` is unique.
   - Prevents *null password bypass* and *account takeover* via email collision.
-  - Full documentation: [[project-docs/valid-ex/ai-sparring/auth-schema-sparring|Auth Schema Sparring Record]].
+  - Full documentation: [[project-docs/valid-ex/ai-sparring/auth-schema-sparring|Auth Schema Sparring Record]]. CHECK diperketat di [[project-docs/valid-ex/adr/0008-sample-row-export|ADR-0008]]: akun `google` tidak boleh menyimpan `password_hash`, dan email disimpan lowercase.
 
 ### 4. Data Input & Parser: Dual-Mode Pasteable DataGrid
 - **Input Interface**: **Clipboard Pasteable DataGrid** (zero regex fragility; analysts directly paste cell blocks from Excel via `Ctrl+C` $\to$ `Ctrl+V`).
@@ -85,12 +85,12 @@ graph TD
   - Implement TDD (Vitest) for analytical chemistry math modules: OLS regression (centered, anti-cancellation), residual $s_{y/x}$, LOD/LOQ, unit-aware solid quantification, 3-zone censoring, banded QC criteria resolver, dan soft-flag QC gating.
   - Ground-truth anchoring: Python stdlib `statistics`, NIST StRD (OLS), SOP lab (kriteria QC), file lab nyata (E2E).
 - [ ] **Milestone 3: Database Schema Setup & Drizzle ORM**
-  - Configure Drizzle ORM with the Neon Serverless PostgreSQL driver (`@neondatabase/serverless`).
-  - Define `users` table (Option 1 auth schema), `calibrations` table (with JSONB points), and audit logs.
+  - Keputusan skema: [[project-docs/valid-ex/adr/0008-sample-row-export|ADR-0008]]. Tabel `users` (CHECK auth diperketat), `qc_criteria_profiles` (berversi, immutable), `calibrations` (kurva JSONB + `analytes text[]`), `sample_rows` (satu baris = satu sampel = satu file Excel; `lab_sample_id` opsional), dan `audit_logs`.
+  - Kode Drizzle + Neon masih menunggu. Transaksi gateway memakai WebSocket pool (`drizzle-orm/neon-serverless`), bukan driver `neon-http`. Sebelum kode itu, kontrak mendapat `labSampleId` opsional dan ekspor berpindah ke satu sampel.
 - [ ] **Milestone 4: Gateway Implementation (Hono @ Vercel Serverless)**
   - Setup Hono API on Vercel with the Node.js adapter.
   - Integrate OpenAPI contract validation, JWT + Google OAuth, and ACID transactional persistence.
-  - Implement Server-Side Excel Generator via `exceljs` (`GET /api/v1/calibrations/:id/export`).
+  - Implement Server-Side Excel Generator via `exceljs`. Satu file = satu sampel ([[project-docs/valid-ex/adr/0008-sample-row-export|ADR-0008]]), plus kurva batch, baris blanko metode, dan baris induk bila ada.
 - [ ] **Milestone 5: Frontend Implementation (React @ Vercel SPA)**
   - Setup Vite + React + TailwindCSS / UI component library.
   - Clipboard Pasteable DataGrid for calibration standards and sample batches.

@@ -15,6 +15,7 @@ Dokumen ini memuat keputusan arsitektur penting (*One-Way Door Decisions*) yang 
 | [ADR-0005](file:///home/zidan/Projects/learning-hub/project-docs/valid-ex/adr/0005-soft-flag-oos-audit-trail.md) | Soft-Flag OOS Regulatory Audit Trail vs Hard Block | **Accepted** | 2026-09-27 | ISO/IEC 17025 QC Gating, Out of Specification SOP |
 | [ADR-0006](file:///home/zidan/Projects/learning-hub/project-docs/valid-ex/adr/0006-matrix-payload-and-metrological-units.md) | Matrix-Tabular Payload with Explicit Units & QC Relations | **Accepted** | 2026-09-27 | DTO Ergonomics, Unit Dimensional Analysis, Anti-Regex |
 | [ADR-0007](file:///home/zidan/Projects/learning-hub/project-docs/valid-ex/adr/0007-governed-qc-criteria-profiles.md) | Governed Versioned QC Criteria Profiles with Banded Thresholds | **Accepted** | 2026-09-27 | QC Governance, Audit Snapshot, Level-Dependent Criteria |
+| [ADR-0008](file:///home/zidan/Projects/learning-hub/project-docs/valid-ex/adr/0008-sample-row-export.md) | Sample-Row Persistence with Per-Sample Excel Export | **Accepted** | 2026-10-15 | Schema, One Excel per Sample, Optional Lab Sample ID |
 
 ---
 
