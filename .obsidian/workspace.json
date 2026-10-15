@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project-docs/valid-ex/CONTEXT.md",
+                "file": "project-docs/valid-ex/adr/0008-sample-row-export.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CONTEXT"
+              "title": "0008-sample-row-export"
             }
           }
         ],
@@ -208,8 +208,15 @@
   },
   "active": "56a3ee01fd570972",
   "lastOpenFiles": [
-    "notes/webdev/Database Migrations.md",
     "project-docs/valid-ex/CONTEXT.md",
+    "project-docs/valid-ex/adr/0008-sample-row-export.md",
+    "perbandingan-spektrometri-emisi-dan-massa.md",
+    "microwave-acid-digestion-protocols.md",
+    "icp-ms-learning-roadmap.md",
+    "ion-optics-and-space-charge.md",
+    "interface-cones-and-vacuum-mechanics.md",
+    "icp-ms-tuning-qc-dan-lab-sparring.md",
+    "notes/webdev/Database Migrations.md",
     "projects/valid-ex/packages/db/drizzle/meta/_journal.json",
     "projects/valid-ex/packages/db/drizzle/meta/0000_snapshot.json",
     "projects/valid-ex/packages/db/test/integrity.test.ts",
@@ -227,23 +234,16 @@
     "project-docs/valid-ex/adr/0003-isomorphic-typescript-math-engine.md",
     "project-docs/valid-ex/adr/0002-single-table-auth-schema.md",
     "project-docs/valid-ex/adr/0001-design-first-openapi.md",
-    "icp-ms-learning-roadmap.md",
     "electron-multiplier-detector.md",
     "notes/analytical_chemistry/raw_thoughts/Maintenance.md",
-    "interface-cones-and-vacuum-mechanics.md",
     "AGENTS.md",
     "isi-ppt.md",
     "sample-homogeneity-in-microwave-digestion.md",
     "sample-introduction-and-nebulization.md",
     "mekanisme-ionisasi-analit-di-plasma.md",
-    "microwave-acid-digestion-protocols.md",
-    "perbandingan-spektrometri-emisi-dan-massa.md",
     "prinsip-dasar-icp-ms.md",
     "ENGINEERING_MANIFESTO.md",
     "project-docs/valid-ex/my-brain/README.md",
-    "templates/instrument_note_template.md",
-    "templates/note_template.md",
-    "icp-ms-tuning-qc-dan-lab-sparring.md",
     "projects/expense-tracker/apps/client/public/favicon.svg",
     "projects/expense-tracker/apps/client/public/icons.svg",
     "projects/expense-tracker/apps/client/dist/icons.svg",
